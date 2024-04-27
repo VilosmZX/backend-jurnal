@@ -46,9 +46,9 @@ const app = express();
     app.use(UserRouter);
     app.use(BannerRouter);
     app.use(PostRouter);
-
-    app.listen(5000, () => console.log("Server is online!"));
   } catch (error) {
     console.error(error);
   }
 })();
+
+export default app;
