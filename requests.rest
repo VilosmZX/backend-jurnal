@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5MWExNWU1OC0yNjAwLTQ5NmUtOTUwZi03NjU1ZmQ2MjU0NWYiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6Im1lbWJlciIsImVtYWlsIjoiYWRtaW5AanVybmFsaXN0aWt0Y3IuY29tIiwiaWF0IjoxNzAyNjQwMzgzLCJleHAiOjE3MDI2NDA2ODN9.e5NERXnJ6onp8DmhnyibxZF3UdcVLk4rip1_Ad9llE4
+
+###
+GET http://localhost:5000/user/
+
+###
+GET http://localhost:5000/refreshToken
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "username": "JoshuaRVL",
+    "email": "admin@jurnalistiktcr.com",
+    "password": "admin09071982",
+    "confirmPassword": "admin09071982"
+}
+
+###
+POST http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+    "email": "admin@jurnalistiktcr.com",
+    "password": "admin09071982"
+}
