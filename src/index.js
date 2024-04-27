@@ -42,6 +42,7 @@ const app = express();
     );
 
     // Routers
+    app.get('/', (req, res) => res.json('JURNALISTIK WEB API'));
     app.use(UserRouter);
     app.use(BannerRouter);
     app.use(PostRouter);
