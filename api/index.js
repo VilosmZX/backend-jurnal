@@ -48,6 +48,8 @@ const app = express();
     app.use(BannerRouter);
     app.use(PostRouter);
 
+    app.listen(5000, () => console.log('seerver is online!'));
+
   } catch (error) {
     console.error(error);
   }
