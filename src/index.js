@@ -14,7 +14,6 @@ import Posts from "./models/PostModel.js";
 import Comments from "./models/CommentModel.js";
 import Categories from "./models/CategoryModel.js";
 import PostRouter from './routers/PostRouter.js'
-import serverless from 'serverless-http';
 
 dotenv.config();
 
