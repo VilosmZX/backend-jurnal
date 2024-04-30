@@ -44,6 +44,7 @@ const app = express();
 
     // Routers
     app.get('/', (req, res) => res.send('JURNALISTIK WEB API'));
+    app.get('/.well-known/pki-validation/9E77C5B815FC315D153E2C70889E1F96.txt', (req, res) => res.sendFile('C:\\Users\\jrava\\OneDrive\\Documents\\backend\\9E77C5B815FC315D153E2C70889E1F96.txt'))
     app.use(UserRouter);
     app.use(BannerRouter);
     app.use(PostRouter);
